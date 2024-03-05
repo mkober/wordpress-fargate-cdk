@@ -57,7 +57,7 @@
    ```
    
 ### Configuration
-In order to complete the WordPress setup you will need to edit the wp-config.php file to define the FORCE_SSL_ADMIN, WP_HOME, and WP_SITEURL.  This will be accessible in the EFS mounted volume under /bitnami. In order to make this modification you will need to remote into one of the Fargate tasks using the AWS CLI. 
+In order to complete the WordPress setup you will need to edit the wp-config.php file to define the FORCE_SSL_ADMIN, WP_HOME, and WP_SITEURL. Without this you see an authentication loop issue when trying to login to the admin. This will be accessible in the EFS mounted volume under /bitnami. In order to make this modification you will need to remote into one of the Fargate tasks using the AWS CLI. 
 
 #### AWS CLI command to remote into and run BASH in a Fargate Task:
 ```bash
