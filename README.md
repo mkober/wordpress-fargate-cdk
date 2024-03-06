@@ -1,4 +1,4 @@
-# Wordpress Hosted on AWS Fargate with EFS and CDK
+# WordPress Hosted on AWS Fargate with EFS and CDK
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
