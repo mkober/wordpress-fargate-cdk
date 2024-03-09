@@ -63,6 +63,11 @@
    ```
    
 ### Configuration
+
+#### Remove cdk.context.json from stacks/.gitignore
+The cdk.context.json is being ignored. This file is generated and referenced when you sythesize with the cdk. In this file your AWS Account ID, Hosted Zone, and Domain Name are stored.  You should commit cdk.context.json to your personal repo to avoid non-deterministic behavior. If you don't the deploy will create a new stack each time. 
+
+#### WordPress wp-config.php file
 In order to complete the WordPress setup you will need to edit the wp-config.php file to define the FORCE_SSL_ADMIN, WP_HOME, and WP_SITEURL. Without this you see an authentication loop issue when trying to login to the admin. This will be accessible in the EFS mounted volume under /bitnami. In order to make this modification you will need to remote into one of the Fargate tasks using the AWS CLI. 
 
 #### AWS CLI command to remote into and run BASH in a Fargate Task:
