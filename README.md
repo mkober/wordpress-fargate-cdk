@@ -49,11 +49,15 @@
    DATABASE_NAME: string,
    DATABASE_USER: string,
    ```
-3. Sythesize the CloudFormation Template
+3. Bootstrap the CDK
+   ```bash
+   cdk bootstrap
+   ```
+4. Sythesize the CloudFormation Template
    ```bash
    cdk synth
    ```
-4. Deployment
+5. Deployment
    ```bash
    cdk deploy
    ```
