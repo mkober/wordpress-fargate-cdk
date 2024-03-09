@@ -7,5 +7,11 @@ node_modules
 .cdk.staging
 cdk.out
 
+# CDK Context File
+# Remove this file if you want keep this in your project
+cdk.context.json
+
+
 .env
 .env.*
+
