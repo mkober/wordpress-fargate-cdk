@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+![Hosting WordPress on AWS with ECS Fargate](https://markkoberlein.com/wp-content/uploads/2024/03/Hosting-WordPress-AWS-ECS-Fargate-EFS-CDK.png)
+
 ## Overview
 * **Purpose:** This CDK project will setup the AWS infrastructure for hosting a WordPress website using ECS Containers, RDS, and EFS.
 * **AWS Services Used:** 
